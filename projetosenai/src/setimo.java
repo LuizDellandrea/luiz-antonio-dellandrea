@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class setimo {
+public class Setimo {
 
     public static void main(String[] args) {
 

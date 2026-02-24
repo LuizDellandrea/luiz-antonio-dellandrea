@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class segundo {
+public class Segundo {
     
     public static void main(String[] args) {
 

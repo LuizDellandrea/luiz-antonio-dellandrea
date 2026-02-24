@@ -1,4 +1,4 @@
-public class oitavo {
+public class Oitavo {
     public static void main(String[] args) {
 
         int[][] matriz = {

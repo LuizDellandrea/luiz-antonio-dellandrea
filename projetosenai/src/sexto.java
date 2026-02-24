@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class sexto {
+public class Sexto {
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
