@@ -33,16 +33,16 @@ public class oitavo {
 
         for (int i = 0; i < matriz.length; i++) {
 
-            // a) Média dos preços
+           
             somadosprecos += matriz[i][2];
 
-            // b) Menor casa (por tamanho)
+            
             if (matriz[i][0] < menortamanho) {
                 menortamanho = matriz[i][0];
                 menor = matriz[i][2];
             }
 
-            // c) Maior e menor número de quartos
+            
             if (matriz[i][1] > maiorquartos) {
                 maiorquartos = matriz[i][1];
                 tamanhomaiorquartos = matriz[i][0];
@@ -53,7 +53,7 @@ public class oitavo {
                 tamanhomenorquartos = matriz[i][0];
             }
 
-            // d) Casas com preço > 300000
+          
             if (matriz[i][2] > 300000) {
                 somatamanhomaior300 += matriz[i][0];
                 contadormaior300++;
