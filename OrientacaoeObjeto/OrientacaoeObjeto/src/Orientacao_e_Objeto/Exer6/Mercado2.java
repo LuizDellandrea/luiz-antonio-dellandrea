@@ -3,7 +3,7 @@ package Orientacao_e_Objeto.Exer6;
 
 public class Mercado2 {
     
-        Mercado2 m1 = new Mercado2();
+        
 
         String nome;
         int macasVendidas;
@@ -12,9 +12,18 @@ public class Mercado2 {
         double precoLaranja;
 
         
+   public double receitaMacas() {
+        return macasVendidas * precoMaca;
+    }
 
-  
-  }
+    public double receitaLaranjas() {
+        return laranjasVendidas * precoLaranja;
+    }
+
+    public double receitaTotal() {
+        return receitaMacas() + receitaLaranjas();
+    }
+}
 
 /*Calcule:
 a) Quem teve a maior receita vendendo maçãs?
