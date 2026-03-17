@@ -53,6 +53,6 @@ public class AeronavePOO {
         if (a4.distanciaMaxima() > maisLonge.distanciaMaxima()) maisLonge = a4;
 
         System.out.println("Aeronave que voa mais longe: " + maisLonge.modelo);
-//exer7
+
     }
 }
