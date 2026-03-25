@@ -8,6 +8,15 @@ public class Aeronave {
     double capacidadeCombustivel;
     double queimaCombustivelPorMinuto;
 
+    public Aeronave(String modelo, int passageiros, double velocidadeMaxima, double capacidadeCombustivel,
+            double queimaCombustivelPorMinuto) {
+        this.modelo = modelo;
+        this.passageiros = passageiros;
+        this.velocidadeMaxima = velocidadeMaxima;
+        this.capacidadeCombustivel = capacidadeCombustivel;
+        this.queimaCombustivelPorMinuto = queimaCombustivelPorMinuto;
+    }
+
     public double tempoDeVoo() {
         return capacidadeCombustivel / queimaCombustivelPorMinuto;
     }
@@ -15,7 +24,5 @@ public class Aeronave {
     public double distanciaMaxima() {
         return velocidadeMaxima * tempoDeVoo();
     }
-
-    
 
 }
