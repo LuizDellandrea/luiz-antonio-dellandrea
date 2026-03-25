@@ -12,6 +12,14 @@ public class Mercado2 {
         double precoLaranja;
 
         
+   public Mercado2(String string, int i, double d, int j, double e) {
+            
+        }   
+
+   public Mercado2() {
+    
+}
+
    public double receitaMacas() {
         return macasVendidas * precoMaca;
     }
