@@ -56,7 +56,11 @@ public class Imposto {
 
 
     public void setUf(String uf) {
-        this.uf = uf;
+       if (uf == null || uf.isBlank()) {
+        System.out.println("Erro, UF nulo ou vazio");
+       } else {
+        
+       }
     }
 
 
