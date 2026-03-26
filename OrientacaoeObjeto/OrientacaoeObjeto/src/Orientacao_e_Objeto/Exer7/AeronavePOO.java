@@ -12,12 +12,12 @@ public class AeronavePOO {
         int passageiros = 0;
         Aeronave aeronaveMaisPassageiros = null;
         for (int i = 0; i < listAeronaves.length; i++) {
-            if (listAeronaves[i].passageiros > passageiros) {
-                passageiros = listAeronaves[i].passageiros;
+            if (listAeronaves[i].getPassageiros > passageiros) {
+                passageiros = listAeronaves[i].getPassageiros;
                 aeronaveMaisPassageiros = listAeronaves[i];
             }
         }
-        System.out.println("Aeronave mais passageiros: " + aeronaveMaisPassageiros.modelo);
+        System.out.println("Aeronave mais passageiros: " + aeronaveMaisPassageiros.getModelo());
 
         double distanciaMaxima = 0;
         Aeronave aeronaveMaisDistancia = null;
@@ -27,7 +27,7 @@ public class AeronavePOO {
                 aeronaveMaisDistancia = listAeronaves[i];
             }
         }
-        System.out.println("Aeronave mais distância: " + aeronaveMaisDistancia.modelo);
+        System.out.println("Aeronave mais distância: " + aeronaveMaisDistancia.getModelo());
 
         double tempoDeVoo = 0;
         Aeronave aeronaveMaisTempo = null;
@@ -37,7 +37,7 @@ public class AeronavePOO {
                 aeronaveMaisTempo = listAeronaves[i];
             }
         }
-        System.out.println("Aeronave mais tempo de voo: " + aeronaveMaisTempo.modelo);
+        System.out.println("Aeronave mais tempo de voo: " + aeronaveMaisTempo.getModelo());
     }
 
 }
