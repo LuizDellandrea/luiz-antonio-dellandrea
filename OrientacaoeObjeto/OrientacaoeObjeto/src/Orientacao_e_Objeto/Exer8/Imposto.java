@@ -1,26 +1,23 @@
 package Orientacao_e_Objeto.Exer8;
 
 public class Imposto {
-  
 
-   private String nome;
-   private String cpf;
-   private String uf;
-   private double rendaAnual;
+    private String nome;
+    private String cpf;
+    private String uf;
+    private double rendaAnual;
 
     Imposto(String nome, String cpf, String uf, double rendaAnual) {
-      setNome(nome);
-      setCpf(cpf);
-      setUf(uf);
-      setRendaAnual(rendaAnual);
+        setNome(nome);
+        setCpf(cpf);
+        setUf(uf);
+        setRendaAnual(rendaAnual);
     }
 
-    
     public String getNome() {
         return nome;
-        
-    }
 
+    }
 
     public double calcularImposto() {
 
@@ -41,7 +38,6 @@ public class Imposto {
         return rendaAnual * aliquota;
     }
 
-
     public void setNome(String nome) {
         if (nome == null || nome.isBlank()) {
             System.out.println("Erro, nome nulo ou vazio");
@@ -51,25 +47,22 @@ public class Imposto {
     }
 
     public void setCpf(String cpf) {
-     this.cpf = cpf;
+        this.cpf = cpf;
     }
-
 
     public void setUf(String uf) {
-       if (uf == null || uf.isBlank()) {
-        System.out.println("Erro, UF nulo ou vazio");
-       } else {
-        
-       }
+        if (uf == null || uf.isBlank()) {
+            System.out.println("Erro, UF nulo ou vazio");
+        } else {
+
+        }
     }
 
-
     public void setRendaAnual(double rendaAnual) {
-        if (rendaAnual < 0 ) {
+        if (rendaAnual < 0) {
             System.out.println("Valor inválido");
         } else {
-         this.rendaAnual = rendaAnual;
+            this.rendaAnual = rendaAnual;
         }
     }
 }
-
