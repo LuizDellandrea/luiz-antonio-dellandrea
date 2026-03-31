@@ -47,11 +47,15 @@ public class Imposto {
     }
 
     public void setCpf(String cpf) {
-        this.cpf = cpf;
+        if (cpf == null || cpf.length() != 11 || cpf.isBlank()) {
+            System.out.println("Erro, CPF nulo ou vazio");
+        } else {
+            this.cpf = cpf;
+        }
     }
 
     public void setUf(String uf) {
-        if (uf == null || uf.isBlank()) {
+        if (uf == null || uf.length() != 2 || uf.isBlank()) {
             System.out.println("Erro, UF nulo ou vazio");
         } else {
 

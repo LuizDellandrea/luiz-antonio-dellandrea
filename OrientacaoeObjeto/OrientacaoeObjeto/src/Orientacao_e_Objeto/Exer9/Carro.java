@@ -18,6 +18,9 @@ public class Carro {
     }
 
     public double getVelocidade() {
+        if (velocidade < 0) {
+            velocidade = 0;
+        }
         return velocidade;
     }
 
