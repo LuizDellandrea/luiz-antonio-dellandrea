@@ -49,15 +49,16 @@ public class Imposto {
     public void setCpf(String cpf) {
         if (cpf == null ||  cpf.isBlank()) {
           throw new IllegalArgumentException("Erro, CPF nulo ou vazio");
-        } else {
+        } 
             this.cpf = cpf;
         }
-    }
+    
 
     public void setUf(String uf) {
         if (uf == null || uf.length() != 2 || uf.isBlank()) {
             throw new IllegalArgumentException("Erro, UF nula ou vazia");
         } else {
+            this.uf = uf;
 
         }
     }
