@@ -40,15 +40,15 @@ public class Imposto {
 
     public void setNome(String nome) {
         if (nome == null || nome.isBlank()) {
-            System.out.println("Erro, nome nulo ou vazio");
+            throw new IllegalArgumentException("Erro, nome nulo ou vazio");
         } else {
             this.nome = nome;
         }
     }
 
     public void setCpf(String cpf) {
-        if (cpf == null || cpf.length() != 11 || cpf.isBlank()) {
-            System.out.println("Erro, CPF nulo ou vazio");
+        if (cpf == null ||  cpf.isBlank()) {
+          throw new IllegalArgumentException("Erro, CPF nulo ou vazio");
         } else {
             this.cpf = cpf;
         }
@@ -56,7 +56,7 @@ public class Imposto {
 
     public void setUf(String uf) {
         if (uf == null || uf.length() != 2 || uf.isBlank()) {
-            System.out.println("Erro, UF nulo ou vazio");
+            throw new IllegalArgumentException("Erro, UF nula ou vazia");
         } else {
 
         }
@@ -64,7 +64,7 @@ public class Imposto {
 
     public void setRendaAnual(double rendaAnual) {
         if (rendaAnual < 0) {
-            System.out.println("Valor inválido");
+            throw new IllegalArgumentException("Erro, renda anual negativa");
         } else {
             this.rendaAnual = rendaAnual;
         }
