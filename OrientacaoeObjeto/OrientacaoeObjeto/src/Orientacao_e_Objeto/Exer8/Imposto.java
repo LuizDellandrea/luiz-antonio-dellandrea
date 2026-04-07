@@ -71,4 +71,3 @@ public class Imposto {
         }
     }
 }
-/*Adiciona throw new */
